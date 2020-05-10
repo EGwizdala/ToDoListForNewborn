@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 80vw;
+  min-width: 600px;
+  max-width: 800px;
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  color: #0A0E0B;
+}
+/* .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 100px 100px 40px 100px 40px 100px 40px 100px 40px 100px;
+    gap: 0px 0px;
+    grid-template-areas: "nav" "header" "statSection" "listTitle" "listSection" "listTitle" "listSection" "statSection" "listTitle"  "statSection" "listTitle" ;
+    
+  } */
+  
+  .nav { 
+    grid-area: nav;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .btnNav{
+    height: 25px;
+    min-width: 120px;
+    width: 10vw;
+    background: none;
+    outline: none;
+    border: none;
+    transform: translate(0%, 50%);
+    transition: 0.3s;
+  }
+
+  .btnNav:hover{
+    border:none;
+    outline: none;
+    background-color: #EF959D;
+    color: white;
+    cursor: pointer;  
+  }
+
+  .btnNav:active{
+    border:none;
+    outline: none;
+    background-color: #b8d8ba;
+    color: white;
+    cursor: pointer;
+  }
+
+  .header { 
+    grid-area: header;
+    width: 100%;
+    background-color: #B8D8BA;
+    height: 100px;
+    color: white;
+    margin-top: none;
+    margin-bottom: none;
+    position: relative;
+   }
+  
+   .h1 {
+    position: absolute;
+    left: 50%;
+    top:40%;
+    transform: translate(-50%, -50%);
+    margin: none;
+    font: 2.5em sans-serif;
+    height: 50px;
+    width: 100%;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+   
+   }
+
+  .statSection {
+    height: 150px;
+    display: grid;
+    grid-template-columns: 2fr 6.5fr;
+    /* grid-template-rows: 0.5fr 1fr; */
+    gap: 0px 0px;
+    grid-template-areas: "listIcon progressStat" "listIcon progressBar";
+    grid-area: statSection;
+    background-color:none;
+    position: relative;
+  }
+  
+  .progressStat { 
+    grid-area: progressStat;
+    position: relative;
+   }
+
+   .progressStat p{ 
+    font-size: 1.3em;
+    /* background-color: tomato; */
+    position: absolute;
+    left: 0%;
+    top:0%;
+    transform: translate(0%, 50%);
+   }
+  
+  .progressBar { grid-area: progressBar;
+    /* background-color: yellowgreen; */
+    
+  }
+  
+  #bar{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 30%;
+    left: 0%;
+    top:0%;
+    transform: translate(0%, 25%);
+    
+  }
+  #bar::-webkit-progress-bar {
+    background-color: #D9DBBC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  #bar::-webkit-progress-value {
+      background-color: #EF959D;
+      border-radius: 2px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+  }
+
+  .listIcon { 
+    grid-area: listIcon; 
+    /* text-shadow: 1px 1px 1px #ccc; */
+    font: 3.5em sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #EF959D;
+    /* background-color: yellow; */
+  }
+  
+  .listTitle {
+    display: grid;
+    grid-template-columns: 1.4fr 3.6fr 1fr;
+    grid-template-rows: 1.1fr;
+    gap: 0px 0px;
+    grid-template-areas: "blanc title arrow";
+    grid-area: listTitle;
+    height: 50px;
+    font-size: 1.2em;
+    position: relative;
+
+  }
+  
+  .liTitle { 
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    grid-area: title;
+    font-weight: bold; 
+    border-bottom: 2px solid #69585F; 
+    font-size: 1.0em;  
+    color: #69585F;  
+  }
+  
+  .arrow { 
+    grid-area: arrow;
+    width: 100%;
+    font-weight: bold; 
+    border-bottom: 2px solid #69585F; 
+    font: 1.2em sans-serif; 
+    color: #69585F;
+    
+   }
+   .arrow i { 
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    transition: 0.3s;
+    cursor: pointer;
+   }
+  
+   .arrow:hover { 
+    color: #ef959d;
+  }
+    .arrow:active { 
+    color: #B8D8BA;
+  }
+
+
+  .blanc { grid-area: blanc; }
+  
+  .listSection {
+    display: grid;
+    grid-template-columns: 2fr 6.5fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "icon list";
+    grid-area: listSection;
+    font-size: 1em;
+    position: relative;
+  }
+  
+  .icon { 
+    display: none;
+    grid-area: icon;
+    font: 4em sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #EF959D;
+    /* background-color: yellow; */
+  }
+  
+
+  .list { 
+    grid-area: list; 
+    display: none;
+  }
+  .list li { 
+    grid-area: list; 
+    font-size: 1em;
+    border-bottom: 0.5px solid #0A0E0B;
+  }
+
+  .liElem {
+   float: left;
+  }
+
+  .container{
+  float: right;
+  display: block;
+  position: relative;
+  
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  }
+
+  .container input {
+   opacity: 0;
+   cursor: pointer;
+  }
+
+  .checkmark {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border: 0.5px solid #69585f;
+  }
+
+  .container:hover input ~ .checkmark {
+    background-color: #D9DBBC;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    left: 5px;
+    bottom: 3px;
+    width: 8px;
+    height: 16px;
+    border: solid #69585f;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .inputBox {
+    width: 100%;
+    height: 30px;
+  }
+
+  input[type=text] {
+    width: 70%;
+    height: 30px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #E4B8AD;
+    background-color: none;
+    font-size: 1em;
+    outline: none;
+    padding-left: 10px;
+    transition: 0.5s;
+    float: left;
+  }
+
+  input[type=text]:focus {
+    background-color: #E4B8AD;
+    color: white;
+  }
+
+  input[type=submit]{
+    height: 30px;
+    width: 25%;
+    background-color:#E4B8AD;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+    float: right;
+    font-size: 1em;
+    color: white;
+    cursor: pointer; 
+  }
+
+  input[type=submit]:hover{
+    border:none;
+    outline: none;
+    background-color: #EF959D;
+     
+  }
+
+  input[type=submit]:active{
+    border:none;
+    outline: none;
+    background-color: #b8d8ba;
+    color: white;
+    cursor: pointer;
+  }
+

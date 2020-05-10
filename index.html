@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&family=Open+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body >
+
+    <main class="grid-container">
+        <nav class="nav">
+            <button id = "btnForBaby" class = "btnNav" onclick = "window.location.href = '#babyList'">DLA DZIECKA</button> 
+            <button id = "btnAccessories" class = "btnNav" onclick = "window.location.href = '#accessoriesLst'">AKCESORIA</button> 
+            <button id = "btnForMommy" class = "btnNav" onclick = "window.location.href = '#forMommyList'">DLA MAMY</button> 
+            <button id = "btnToHospital" class = "btnNav" onclick = "window.location.href = '#toHopsitalList'">DO SZPITALA</button>
+        
+        </nav>
+        
+        <header class="header"> <div class = "h1">Wyprawka dla malucha i mamy...</div></header>
+        
+        <section class="statSection">
+             <div class="listIcon">
+                 <i class="fas fa-tasks"></i>
+            </div>
+             <div class="progressStat">
+                <p> GRATULACJE! <span class = "status">...</span> przygotowań masz juz za sobą!</p>
+             </div>
+             <div class="progressBar">
+                <progress id="bar" value="50" max="100"></progress>
+             </div>
+        </section>
+
+
+        <section class="listTitle">
+             <div class="empty"></div>
+             <div id = "forBabyLi" class="liTitle">DLA DZIECKA</div>
+             <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+        </section>
+
+        <section class="listSection" id = "babyList">
+          <div class="icon"><i class="fas fa-baby"></i></div>
+          <div class="list">
+              <ul>
+                  <li>
+                    <span class="liElem">śpioszki – 7 sztuk</span>
+                    <label class = "container"> 
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span> 
+                    </label>
+                  </li>
+                  <li>
+                    <span class="liElem">bodziaki - 10sztuk</span>
+                    <label class = "container"> 
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span> 
+                    </label>
+                  </li>
+                  <li>
+                    <span class="liElem">pajacyki - 6 sztuk</span>
+                    <label class = "container"> 
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span> 
+                    </label>
+                  </li>
+                  <li>
+                    <span class="liElem">czapeczki - 4 sztuk</span>
+                    <label class = "container"> 
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span> 
+                    </label>
+                  </li>
+                  <li>
+                    <span class="liElem">ciepły pajacyk - 2 sztuki</span>
+                    <label class = "container"> 
+                      <input type="checkbox" class="checkbox">
+                      <span class="checkmark"></span> 
+                    </label>
+                  </li>
+                  
+              </ul>
+              <div class = "inputBox">
+                <input type="text" class = "input" name="Dodaj arykuł" class="addBtn">
+                <input type="submit" class = "addBtn" value="DODAJ" class = "input">
+              </div>
+          </div>
+        </section>
+
+        <section class="listTitle">
+            <div class="empty"></div>
+            <div class="liTitle">AKCESORIA</div>
+            <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+       </section>
+
+       <section class="listSection" id = "accessoriesLst">
+         <div class="icon"><i class="fas fa-baby-carriage"></i></div>
+         <div class="list">
+             <ul >
+              <li>
+                <span class="liElem">butelki</span>
+                <label class = "container"> 
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+              </li>
+              <li>
+                <span class="liElem">smoczki</span>
+                <label class = "container"> 
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+              </li>
+              <li>
+                <span class="liElem">podgrzewacz do butelek</span>
+                <label class = "container"> 
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+              </li>
+              <li>
+                <span class="liElem">łóżeczko z wyposażeniem</span>
+                <label class = "container"> 
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+              </li>
+              <li>
+                <span class="liElem">rożek</span>
+                <label class = "container"> 
+                  <input type="checkbox" class="checkbox">
+                  <span class="checkmark"></span> 
+                </label>
+              </li>
+             </ul>
+             <div class = "inputBox">
+              <input type="text" class = "input" name="Dodaj arykuł" class="addBtn">
+              <input type="submit" class = "addBtn" value="DODAJ" class = "input">
+            </div>
+         </div>
+       </section>
+       <section class="listTitle">
+        <div class="empty"></div>
+        <div class="liTitle">DLA MAMY</div>
+        <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+   </section>
+
+   <section class="listSection" id = "forMommyList">
+     <div class="icon"><i class="fas fa-female"></i></div>
+     <div class="list">
+         <ul>
+          <li>
+            <span class="liElem">laktator</span>
+            <label class = "container"> 
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span> 
+            </label>
+          </li>
+          <li>
+            <span class="liElem">poduszka do karmienia</span>
+            <label class = "container"> 
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span> 
+            </label>
+          </li>
+          <li>
+            <span class="liElem">biustonosz do karmienia</span>
+            <label class = "container"> 
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span> 
+            </label>
+          </li>
+          <li>
+            <span class="liElem">woreczki na pokarm</span>
+            <label class = "container"> 
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span> 
+            </label>
+          </li>
+          <li>
+            <span class="liElem">koszulki z rozcięciem</span>
+            <label class = "container"> 
+              <input type="checkbox" class="checkbox">
+              <span class="checkmark"></span> 
+            </label>
+          </li>
+         </ul>
+         <div class = "inputBox">
+          <input type="text" class = "input" name="Dodaj arykuł" class="addBtn">
+          <input type="submit" class = "addBtn" value="DODAJ" class = "input">
+        </div>
+     </div>
+   </section>
+
+   <section class="listTitle">
+    <div class="empty"></div>
+    <div class="liTitle">DO SZPITALA</div>
+    <div class="arrow"><i class="fas fa-chevron-down"></i></div>
+</section>
+
+<section class="listSection" id = "toHopsitalList">
+ <div class="icon"><i class="fas fa-clinic-medical"></i></div>
+ <div class="list" >
+     <ul>
+      <li>
+        <span class="liElem">dowód osobisty</span>
+        <label class = "container"> 
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span> 
+        </label>
+      </li>
+      <li>
+        <span class="liElem">karta ciąży</span>
+        <label class = "container"> 
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span> 
+        </label>
+      </li>
+      <li>
+        <span class="liElem">kozsula od porodu</span>
+        <label class = "container"> 
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span> 
+        </label>
+      </li>
+      <li>
+        <span class="liElem">majtki poporodowe</span>
+        <label class = "container"> 
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span> 
+        </label>
+      </li>
+      <li>
+        <span class="liElem">wkłady poporodowe</span>
+        <label class = "container"> 
+          <input type="checkbox" class="checkbox">
+          <span class="checkmark"></span> 
+        </label>
+      </li>
+     </ul>
+     <div class = "inputBox">
+      <input type="text" class = "input" name="Dodaj arykuł" class="addBtn">
+      <input type="submit" class = "addBtn" value="DODAJ" class = "input">
+    </div>
+ </div>
+</section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
