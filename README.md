@@ -15,7 +15,7 @@ A to do list for future mom and dad. List is divided in sections: baby, accessor
 A to do list developed for my own use and practise using Local Storage as a data server. 
 
 ## Screenshots
-![ToDoList](./img/ToDO.png)
+![ToDoList](ToDO.png)
 
 ## Technologies
 * HTML5
