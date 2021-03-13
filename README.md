@@ -1,5 +1,5 @@
 # ToDO List For Newborn
-A to do list for furure mom and dad. List is divided in sections: baby, accesories, mom, hospital. It shows the progress of your preparations with a progress bar.
+A to do list for future mom and dad. List is divided in sections: baby, accessories, mom, hospital. It shows the progress of your preparations with a progress bar.
 
 ## Table of contents
 * [General info](#general-info)
@@ -12,7 +12,7 @@ A to do list for furure mom and dad. List is divided in sections: baby, accesori
 * [Contact](#contact)
 
 ## General info
-A to do list developed for my own use and practise using Local Sorage as a data server. 
+A to do list developed for my own use and practise using Local Storage as a data server. 
 
 ## Screenshots
 ![ToDoList](./img/ToDO.png)
